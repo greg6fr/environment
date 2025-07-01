@@ -12,5 +12,5 @@
     - docker
     - nodejs
     - chrome
-    - firewall
+  # - firewall
   # - user
