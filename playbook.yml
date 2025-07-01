@@ -3,9 +3,9 @@
   become: true
   vars:
   # dev_user: jules
-    #ssh_private_key: "~/mykey.pem"
+    ssh_private_key: ~/mykey.pem
     node_version: "20"
-    admin_user: "admin"
+    admin_user: admin
 
   roles:
     - common
