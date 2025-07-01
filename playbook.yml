@@ -1,0 +1,16 @@
+- name: Initialiser la VM pour environnement DevOps
+  hosts: all
+  become: true
+  vars:
+  # dev_user: jules
+    ssh_pub_key: "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
+    node_version: "20"
+    admin_user: admin
+
+  roles:
+    - common
+    - docker
+    - nodejs
+    - chrome
+    - firewall
+  # - user
