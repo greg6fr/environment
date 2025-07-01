@@ -3,7 +3,7 @@
   become: true
   vars:
   # dev_user: jules
-    ssh_pub_key: "{{ lookup('file', '/home/jules/mykey.pem') }}"
+    ssh_pub_key: "~/mykey.pem"
     node_version: "20"
     admin_user: "admin"
 
