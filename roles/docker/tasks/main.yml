@@ -22,8 +22,8 @@
     state: present
     update_cache: yes
 
-- name: Ajouter {{ dev_user }} au groupe docker
+- name: Ajouter {{ admin_user }} au groupe docker
   user:
-    name: "{{ dev_user }}"
+    name: "{{ admin_user }}"
     groups: docker
     append: yes
